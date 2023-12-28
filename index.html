@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Luas dan Keliling Bangun Datar</title>
+  <link rel="stylesheet"href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Kalkulator Luas dan Keliling Bangun Datar</h1>
+    <!-- input untuk persegi panjang -->
+
+    <div class="shape">
+      <h2>Persegi Panjang</h2>
+      <label for="ppanjang">Panjang:</label>
+      <input type="number" id="ppanjang">
+      <label for="plebar">Lebar:</label>
+      <input type="number" id="plebar">
+      <button onclick="hitungPersegiPanjang()">Hitung</button>
+      <p>Luas: <span id="luas_pp"></span></p>
+      <p>Keliling: <span id="keliling_pp"></span></p>
+    </div>
+
+    <!-- input untuk bujur sangkar -->
+
+    <div class="shape">
+      <h2>Bujur Sangkar</h2>
+      <label for="bsisi">Sisi:</label>
+      <input type="number" id="bsisi">
+      <button onclick="hitungBujurSangkar()">Hitung</button>
+      <p>Luas: <span id="luas_bs"></span></p>
+      <p>Keliling: <span id="keliling_bs"></span></p>
+    </div>
+
+    <!-- input untuk lingkaran -->
+
+    <div class="shape">
+      <h2>Lingkaran</h2>
+      <label for="jari">Jari-jari:</label>
+      <input type="number" id="jari">
+      <button onclick="hitungLingkaran()">Hitung</button>
+      <p>Luas: <span id="luas_ling"></span></p>
+      <p>Keliling: <span id="keliling_ling"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
